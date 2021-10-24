@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600;700;800&family=Poiret+One&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+/*SCROLL*/
+::-webkit-scrollbar{
+    background-color: #1E1842;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(#FF6E67, #00D4B9);
+    border-radius: 50px;
+    border: solid #1E1842 1px;
+}
+a, a:link{
+    text-decoration: none;
+}

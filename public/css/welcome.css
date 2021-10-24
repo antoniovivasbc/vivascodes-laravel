@@ -1,0 +1,59 @@
+.h2-container{ 
+    position: absolute;
+    top: 20px;
+    width: 100%;
+}
+h2{
+    text-align: center;
+}
+.box{
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+    transition: .5s;
+}
+.adicionar, .remover, .editar{
+    height: 100vh;
+}
+.card{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+    border-radius: 15px!important;
+    transition: .3s;
+}
+.card h5{
+    text-align: center!important;
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+.card p{
+    text-align: center;
+    width: 85%;
+    margin-left: 7.5%;
+    font-weight: 500;
+}
+.botao{
+    width: 85%;
+    margin-top: 40px;
+    margin-left: 7.5%;
+    border: none;
+    padding: 5px;
+    border-radius: 7px;
+    color: white;
+    font-size: 18px;
+    background-color: #40DFCB;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 4px;
+    font-weight: bold;
+    transition: .3s;
+}
+.adicionar .card .botao{
+    background-color: #40DFCB;
+}
+.remover .card .botao{
+    background-color: #FF807A;
+}
+.editar .card .botao{
+    background-color: #40D3F2;
+}

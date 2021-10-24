@@ -1,0 +1,32 @@
+body{
+    background: linear-gradient(130deg, #40DFCB, white, #FF807A);
+}
+.logo{
+    display: block;
+    width: 200px;
+    margin: auto;
+    margin-top: 50px;
+}
+.login-container{
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    border-radius: 5px;
+}
+.login{
+    padding-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.input{
+    width: 80%!important;
+    margin-left: 10%;
+}
+.submit{
+    width: 80%!important;
+}

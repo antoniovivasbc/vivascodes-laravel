@@ -1,0 +1,458 @@
+/* NAVBAR */
+.nav{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0px;
+    box-shadow: 1px 2px 2px black;
+    background-color: hsl(0, 0%, 100%, .1);
+    display: flex;
+}
+.nav img:hover, .icones2 img:hover, .biblioteca div div:hover, .biblioteca div:hover, #close:hover, .modal-btn:hover{
+    cursor: pointer;
+}
+.nav-item1 a{
+    padding: 0!important;
+}
+.toggle-btn{
+    width: 25%;
+    display: flex;
+    justify-content: unset;
+}
+.toggle-btn img{
+    margin-top: 15px;
+    margin-left: 10px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 1s;
+}
+.toggle-btn img:hover{
+    background-color: #3D9AE2;
+}
+.nav-item1{
+    width: 50%;
+    vertical-align: top;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.nav-item1 img{
+    vertical-align: middle;
+    height: 60px;
+    margin-top: 10px;
+}
+.nav-item3{
+    width: 24%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav-item3 img{
+    margin-top: 20px;
+    height: 40px;
+}
+/*FIM NAVBAR*/
+/*SIDEBAR*/
+#sidebar{
+    height: 100vh;
+    width: 0;
+    box-shadow: 1px 2px 2px black;
+    background-color: hsl(0, 0%, 100%, .1);
+    position: fixed;
+    margin-top: 80px;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    transition: .5s;
+}
+#sidebar a{
+    font-size: 20px!important;
+    color: #00D4B9;
+    display: block;
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    font-family: 'Coiny', cursive;
+    transition: .5s;
+}
+#sidebar a:hover{
+    text-decoration-line: inherit;
+    background-color: #00D4B9;
+    color: white;
+}
+.icones2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.icones2 img{
+    min-width: 40px;
+    width: 40px;
+}
+/*FIM SIDEBAR*/
+@media screen and (max-width: 800px) and (min-width: 601px){
+    .nav-item3{
+        display: none;
+    }
+}
+@media screen and (max-width : 600px){
+    
+}
+#home{
+    width: 100%;
+    background-image: url(../img/bghome.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mascara{
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), #21297400, #21297400, #2129744b, #2129747a, #212974);
+    position: relative;
+}
+/*HOME*/
+.titulo{
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+    color: #00D4B9;
+    font-size: 70px;
+    text-shadow: 1px 4px 0px black;
+    font-family: 'Coiny', cursive;
+}
+.titulo2{
+    margin-top: 0vh;
+}
+.flexbox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.apresentacao{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    color: white;
+}
+.apresentacao img{
+    width: 40%;
+    vertical-align: middle;
+}
+.apresentacao div{
+    vertical-align: middle;
+    display: inline-block;
+}
+.apresentacao h1{
+    font-size: 50px;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+.apresentacao h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+}
+/*FIM HOME*/
+/*PROGRAMMING*/
+#programming{
+    background-image: url(../img/programmingbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #212974;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.linguagens{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.linguagens div{
+    width: 50vw;
+}
+.linguagens div img{
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    box-shadow: -5px 5px 5px black;
+    border-radius: 10%;
+    transition: .5s;
+}
+.linguagens div img:hover{
+    border-radius: 100%;
+    box-shadow: -10px 10px 10px black;
+}
+.linguagens div p{
+    display: flex;
+    margin-left: 15px;
+    margin-top: 10vh;
+    text-align: justify;
+    color: white;
+    font-size: 25px;
+    width: 80%;
+}
+.linguagensimg{
+    margin-top: 20vh;
+    display: inline-block;
+    flex-wrap: wrap;
+}
+/*FIM PROGRAMMING*/
+/*PORTFOLIO*/
+#portfolio{
+    background-color: #1E1842;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.gif-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#modal, #modal2{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-family: 'Baloo Tammudu 2', cursive;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.modal-content-container{
+    box-shadow: 0px 0px 10px 5px #00D4B9;
+    background-color: black;
+    width: 800px;
+    max-height: 80vh;
+    overflow-y: scroll;
+    position:relative;
+    border-radius: 5px;
+    color: white;
+    transition: .5s;
+}
+#close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+}
+.modal-content-container h1{
+    font-size: 35px;
+    margin-top: 10px;
+    text-align: center;
+}
+.descricao{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.descricao{
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: justify;
+}
+.descricao div{
+    margin-top: 5px;
+    font-size: 16px;
+}
+.tecnologias{
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.tecnologias div img{
+    width: 50px;
+    margin-top: 10px;
+}
+.modal-btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.modal-btn-container a:hover{
+    background-color: rgba(0, 0, 0, 0)!important;
+}
+.modal-btn{
+    border-radius: 50px;
+    border: solid 3px #FF6E67;
+    width: 130px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    font-weight: bold;
+    transition: .5s;
+}
+.modal-btn:hover{
+    background-color: #FF6E67;
+}
+.right{
+    margin-left: 5px;
+}
+.left{
+    margin-right: 5px;
+}
+/*FOOTER*/
+#footer{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+#footer p{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.gif-container{
+    margin-top: 50px;
+}
+.biblioteca{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 150px;
+    margin-bottom: 10vh;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+.biblioteca div{
+    color: white;
+    width: 32vw;
+    min-width:400px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0);
+    margin-bottom: 2vh;
+    overflow: hidden;
+}
+.biblioteca div div{
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, .9);
+    overflow-x: hidden;
+    white-space: nowrap;
+    transition: .3s;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.site{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*FIM FOOTER*/
+/*RESPONSIVIDADE*/
+@media screen and (max-width: 1100px){
+    .linguagens{
+        justify-content: center;
+    }
+    .linguagens div{
+        width: 70%;
+    }
+    .linguagens div p{
+        width: 100%;
+        margin-left: 0;
+    }
+    .linguagensimg{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        width: 100%!important;
+    }
+    .modal-content-container{
+        width: 90vw;
+        overflow-y: scroll;
+    }
+    .modal-btn{
+        bottom: unset;
+    }
+    .tecnologias{
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 800px) and (min-width: 601px){
+    .nav-item3{
+        display: none;
+    }
+    .apresentacao{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .apresentacao img{
+        width: 60%;
+    }
+}
+@media screen and (max-width : 600px){
+    .nav-item3{
+        display: none;
+    }
+    .titulo{
+        font-size: 40px;
+    }
+    .apresentacao{
+        text-align: center;
+    }
+    .apresentacao img{
+        width: 60%;
+    }
+    .apresentacao h1{
+        font-size: 35px;
+    }
+    .apresentacao h2{
+        font-size: 30px;
+    }
+    #programming{
+        padding-bottom: 5vh;
+        background-image: none;
+    }
+    
+    .linguagens{
+        display: flex;
+        flex-direction: column;
+    }
+    .linguagens div{
+        width: 100%;
+        margin-right: 0px;
+    }
+    .linguagens div p{
+        width: 80%;
+        font-size: 20px;
+        margin-top: 5vh;
+        margin-left: 10vw;
+    }
+    .linguagens div img{
+        width: 70px;
+        height: 70px;
+    }
+    .gif-container img{
+        width: 100%;
+        height: 100%;
+    }
+    .biblioteca{
+        display: block;
+    }
+    .biblioteca div{
+        min-width: 90vw;
+        margin-left: 5vw;
+    }
+    .biblioteca div div{
+        margin-left: 0vw;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 315px){
+    .right{
+        margin-left: 0;
+    }
+    .left{
+        margin-right: 0;
+    }
+}
