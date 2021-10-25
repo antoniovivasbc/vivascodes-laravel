@@ -8,3 +8,6 @@ function mudarCor(id, bg, letra, botao){
     button[0].style.background = botao;
     button[0].style.color = bg;
 }
+function modalForm(){
+    
+}
