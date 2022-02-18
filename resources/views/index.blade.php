@@ -23,7 +23,7 @@
             <div id="sidebar">
                 <a href="#home"> Hello World </a>
                 <a href="#programming"> Programming </a>
-                <a href="#portfolio"> Portfólio </a>
+                <a href="#portfolio"> Portfolio </a>
                 <a href="" onclick="redirecionar()"> Contato </a>
                 <div class="icones2">
                     <img onclick="redirecionar()" src="img/whatsapp.png" alt="">
@@ -31,9 +31,7 @@
                     <img onclick="redirecionar3()" src="img/linkedin.png" alt="">
                 </div>
             </div>
-            <div class="titulo">
-                > Hello World
-            </div>
+            <h1 class="titulo">> Hello World</h1>
             <div class='flexbox'>
                 <div class="apresentacao">
                     <img src="img/foto.png" alt="" class="perfil">
@@ -46,15 +44,12 @@
         </div>
     </section>
     <section id="programming">
-        <div class="titulo titulo2">
-            > Programming
-        </div>
+        <h2 class="titulo">> Programming</h2>
         <div class="linguagens">
             <div>
                 <p>
-                  Este site tem o propósito de apresentar o meu trabalho para
-                  as pessoas e empresas, além de ser um ótimo meio de refinar minhas habilidades como programador,
-                  onde posso fazer todo tipo de teste e atualização para que fique cada vez melhor. Atualmente uso e estudo a respeito das seguintes tecnologias abaixo.
+                I am a full stack developer that love the back-end programming. I have made this website to show my skills and projects that I have done, 
+                currently I work using the following tecnologies below. I hope you enjoy my job!
                 </p>
                 <div class="linguagensimg">
                     <img src="img/htmlimg.png" alt="">
@@ -75,15 +70,15 @@
                     <h1>Plazza Veículos</h1>
                 </div>
                 <div class='descricao'>
-                    <h3>Descrição</h3>
+                    <h3>Description</h3>
                     <div>
                         <p>
-                            Plazza Veículos é uma loja de carros seminovos, este site possui a interface para o cliente e uma dashboard para os funcionários, por onde ocorre o gerenciamento dos veículos. No momento o site não realiza transações (e-commerce), o contato é feito através de whatsapp, instagram, facebook e e-mail. Cada veículo possui sua página individual com suas respectivas informações
+                            Plazza Veículos is a car store, its website has an interface for the clients and a dashboard where the employees can manage the cars (add, edit or remove). Currently this site is not an e-commerce.
                         </p>
                     </div>
                 </div>
                 <div class='tecnologias'>
-                    <h3>Tecnologias utilizadas</h3>
+                    <h3>Technologies</h3>
                     <div>
                         <img src="img/htmlimg.png" alt="">
                         <img src="img/cssimg.png" alt="">
@@ -95,8 +90,7 @@
                     </div>
                 </div>
                 <div class='modal-btn-container'>
-                    <a href="https://www.vivascodes.com/plazzaveiculos/dashboard" target="_blank"><button class='modal-btn left'>Link para teste</button></a>
-                    <a href="https://www.plazzaveiculos.com.br" target="_blank"><button class='modal-btn right'>Visite o site</button></a>
+                    <a href="https://www.plazzaveiculos.com.br" target="_blank"><button class='modal-btn right'>Visit the site</button></a>
                 </div>
             </div>
         </div>
@@ -107,15 +101,15 @@
                     <h1>Açougue Do Fiel</h1>
                 </div>
                 <div class='descricao'>
-                    <h3>Descrição</h3>
+                    <h3>Description</h3>
                     <div>
                         <p>
-                            Sistema PDV para açougue e mercadinho do Fiel, o sistema conta com frente de caixa, cadastro, pesquisa e edição dos produtos, relatório de vendas e planilha de estoque.
+                        POS system for a bakery and grocery, the system has products register, edition, search, sales report and stock spreadsshee. The employee can only sell items.
                         </p>
                     </div>
                 </div>
                 <div class='tecnologias'>
-                    <h3>Tecnologias utilizadas</h3>
+                    <h3>Technologies</h3>
                     <div>
                         <img src="img/htmlimg.png" alt="">
                         <img src="img/cssimg.png" alt="">
@@ -127,13 +121,11 @@
                     </div>
                 </div>
                 <div class='modal-btn-container'>
-                    <a href="https://www.vivascodes.com/acouguedofiel" target="_blank"><button class='modal-btn left'>Link para teste</button></a>
+                    <a href="https://www.vivascodes.com/acouguedofiel" target="_blank"><button class='modal-btn left'>Link to test</button></a>
                 </div>
             </div>
         </div>
-        <div class="titulo">
-            > Portfólio
-        </div> 
+        <h2 class="titulo">> Portfolio</h2> 
         <div class="gif-container">
             <img src="img/full-stack-development.gif" alt="">
         </div>
@@ -142,8 +134,8 @@
             <div onclick="modal2()" id="acougue" class = "site" style="background-image: url(img/fundo-acougue.jpg);"><div onclick="modal2()"  class = "filho">Açougue Do Fiel</div></div>
         </div>
         <div id="footer">
-        <p>Desenvolvido por Antonio Vivas</p>
-    </div>
+            <p>© Copyright - <span>Vivas Codes</span></p>
+        </div>
     </section>
 @section('scripts')
     <script src="js/jquery.js"></script>

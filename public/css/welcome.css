@@ -145,3 +145,27 @@ h2{
 .modal-header, .modal-footer{
     border: none!important;
 }
+/*Modal Busca*/
+.busca{
+    width: 100%;
+}
+.busca input{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 5px;
+}
+.projetos{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.projetos div{
+    background-image: url(../img/dashboard.png);
+    background-size: cover;
+    height: 150px;
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

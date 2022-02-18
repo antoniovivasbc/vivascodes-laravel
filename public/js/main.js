@@ -11,7 +11,7 @@ $('.filho').hover(function(){
 });
 var validator = 0;
 function sidebar(){
-    var largura = screen.width;
+    var largura = window.innerWidth;
     var sidebar = document.getElementById("sidebar");
     if(largura <= 600){
         if(validator == 0){
@@ -56,22 +56,13 @@ function sidebar(){
     }    
 }
 function redirecionar(){
-    window.open("https://api.whatsapp.com/send?l=pt&phone=557185037829");
+    window.open("https://api.whatsapp.com/send?l=pt&phone=34695022614");
 }
 function redirecionar2(){
     window.open("https://github.com/antoniovivasbc");
 }
 function redirecionar3(){
     window.open("https://www.linkedin.com/in/antonio-vivas-41795720a/");
-}
-function closer(){
-    window.open("http://antoniovivas.ueuo.com/closerlanguagecenter");
-}
-function acougue(){
-    window.open("http://antoniovivas.ueuo.com/acouguedofiel");
-}
-function dashboard(){
-    window.open("http://antoniovivas.ueuo.com/dashboard");
 }
 
 

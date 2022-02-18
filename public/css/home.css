@@ -5,7 +5,7 @@
     position: fixed;
     top: 0px;
     box-shadow: 1px 2px 2px black;
-    background-color: hsl(0, 0%, 100%, .1);
+    background-color: hsl(0, 0%, 100%, .15);
     display: flex;
 }
 .nav img:hover, .icones2 img:hover, .biblioteca div div:hover, .biblioteca div:hover, #close:hover, .modal-btn:hover{
@@ -57,7 +57,7 @@
     height: 100vh;
     width: 0;
     box-shadow: 1px 2px 2px black;
-    background-color: hsl(0, 0%, 100%, .1);
+    background-color: hsl(0, 0%, 100%, .15);
     position: fixed;
     margin-top: 80px;
     white-space: nowrap;
@@ -96,9 +96,6 @@
         display: none;
     }
 }
-@media screen and (max-width : 600px){
-    
-}
 #home{
     width: 100%;
     background-image: url(../img/bghome.jpg);
@@ -119,9 +116,6 @@
     font-size: 70px;
     text-shadow: 1px 4px 0px black;
     font-family: 'Coiny', cursive;
-}
-.titulo2{
-    margin-top: 0vh;
 }
 .flexbox{
     width: 100%;
@@ -162,10 +156,14 @@
     min-height: 100vh;
     overflow-x: hidden;
 }
+#programming .titulo{
+    font-size: 60px;
+}
 .linguagens{
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    font-family: 'Baloo Tammudu 2', cursive;
 }
 .linguagens div{
     width: 50vw;
@@ -188,8 +186,11 @@
     margin-top: 10vh;
     text-align: justify;
     color: white;
-    font-size: 25px;
+    font-size: 24px;
     width: 80%;
+    line-height: 1.2;
+    overflow-y: hidden;
+    padding-top: 10px;
 }
 .linguagensimg{
     margin-top: 20vh;
@@ -203,6 +204,9 @@
     width: 100%;
     min-height: 100vh;
     overflow-x: hidden;
+}
+#portfolio .titulo{
+    font-size: 60px;
 }
 .gif-container{
     width: 100%;
@@ -286,6 +290,7 @@
     background-color: rgba(255, 255, 255, 0);
     color: white;
     font-weight: bold;
+    margin-bottom: 20px;
     transition: .5s;
 }
 .modal-btn:hover{
@@ -304,12 +309,18 @@
     display: flex;
     justify-content: center;
     height: 50px;
+    font-family: 'Baloo Tammudu 2', cursive;
 }
 #footer p{
     color: white;
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 16px;
+    overflow-y: hidden;
+}
+#footer p span{
+    font-weight: bold;
+    color: #00D4B9;
 }
 .gif-container{
     margin-top: 50px;
@@ -325,7 +336,8 @@
 .biblioteca div{
     color: white;
     width: 32vw;
-    min-width:400px;
+    max-width:500px;
+    min-width: 300px;
     height: 200px;
     background-color: rgba(255, 255, 255, 0);
     margin-bottom: 2vh;
