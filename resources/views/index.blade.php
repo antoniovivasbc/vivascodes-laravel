@@ -104,7 +104,7 @@
                     <h3>Description</h3>
                     <div>
                         <p>
-                        POS system for a bakery and grocery, the system has products register, edition, search, sales report and stock spreadsshee. The employee can only sell items.
+                            POS system for a bakery and grocery, the system has products register, edition, search, sales report and stock spreadsshee. The employee can only sell items.
                         </p>
                     </div>
                 </div>
@@ -125,6 +125,65 @@
                 </div>
             </div>
         </div>
+        <div id='modal3'>
+            <div class='modal-content-container'>
+                <img onclick="fecha_modal3()" id='close' src="img/close.png" alt="">
+                <div class='modal-content'>
+                    <h1>Vivas Acessorios</h1>
+                </div>
+                <div class='descricao'>
+                    <h3>Description</h3>
+                    <div>
+                        <p>
+                            Vivas Acessorios was my aunt's store, so I used this to make my first website. This website shows the products, but does not have a dashboard, everything is made manually on code.
+                        </p>
+                    </div>
+                </div>
+                <div class='tecnologias'>
+                    <h3>Technologies</h3>
+                    <div>
+                        <img src="img/htmlimg.png" alt="">
+                        <img src="img/cssimg.png" alt="">
+                        <img src="img/jsimg.png" alt="">
+                    </div>
+                </div>
+                <div class='modal-btn-container'>
+                    <a href="https://www.vivascodes.com/vivasacessorios" target="_blank"><button class='modal-btn left'>Link to test</button></a>
+                </div>
+            </div>
+        </div>
+        <div id='modal4'>
+            <div class='modal-content-container'>
+                <img onclick="fecha_modal4()" id='close' src="img/close.png" alt="">
+                <div class='modal-content'>
+                    <h1>Closer Language Center</h1>
+                </div>
+                <div class='descricao'>
+                    <h3>Description</h3>
+                    <div>
+                        <p>
+                            Vivas Acessorios was my aunt's store, so I used this to make my first website. This website shows the products, but does not have a dashboard, everything is made manually on code.
+                        </p>
+                    </div>
+                </div>
+                <div class='tecnologias'>
+                    <h3>Technologies</h3>
+                    <div>
+                    <img src="img/htmlimg.png" alt="">
+                        <img src="img/cssimg.png" alt="">
+                        <img src="img/jsimg.png" alt="">
+                        <img src="img/jqueryimg.png" alt="">
+                        <img src="img/phpimg.png" alt="">
+                        <img src="img/phpmailerimg.png" alt="">
+                        <img src="img/ajaximg.png" alt="">
+                        <img src="img/sqlimg.png" alt="">
+                    </div>
+                </div>
+                <div class='modal-btn-container'>
+                    <a href="https://www.vivascodes.com/closerlanguagecenter" target="_blank"><button class='modal-btn left'>Link to test</button></a>
+                </div>
+            </div>
+        </div>
         <h2 class="titulo">> Portfolio</h2> 
         <div class="gif-container">
             <img src="img/full-stack-development.gif" alt="">
@@ -132,6 +191,8 @@
         <div class="biblioteca">
             <div onclick="modal()" id="plazza" class = "site" style="background-image: url(img/plazza.jpg);"><div onclick="modal()"  class = "filho">Plazza Veículos</div></div>
             <div onclick="modal2()" id="acougue" class = "site" style="background-image: url(img/fundo-acougue.jpg);"><div onclick="modal2()"  class = "filho">Açougue Do Fiel</div></div>
+            <div onclick="modal3()" id="vivasacessorios" class = "site" style="background-image: url(img/vivasacessorios.png);"><div onclick="modal3()"  class = "filho">Vivas Acessorios</div></div>
+            <div onclick="modal4()" id="closerlanguagecenter" class = "site" style="background-image: url(img/closerlanguagecenter.jpg);"><div onclick="modal4()"  class = "filho">Closer Language Center</div></div>
         </div>
         <div id="footer">
             <p>© Copyright - <span>Vivas Codes</span></p>

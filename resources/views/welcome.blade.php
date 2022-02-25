@@ -1,6 +1,7 @@
 @extends('layouts.main')
 @section('links')
 <link rel="stylesheet" href="css/welcome.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 @section('content')
 <!--modal--><!--
 <div class="mascara">
@@ -109,16 +110,16 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form action="">
+        <form action="/vivascodes2.0/public/welcome" method="POST">
                 <div class="nome">
-                    <input type="text" placeholder="Nome">
+                    <input type="text" name="nome" placeholder="Nome">
                 </div>
                 <div class="links">
-                    <input type="text" placeholder="Link do site">
-                    <input type="text" placeholder="Link do teste">
+                    <input type="text" name="site" placeholder="Link do site">
+                    <input type="text" name="teste" placeholder="Link do teste">
                 </div>
                 <div class="descricao">
-                    <textarea name="" placeholder="Descrição" id="" cols="30" rows="10"></textarea>
+                    <textarea name="descricao" placeholder="Descrição" id="" cols="30" rows="10"></textarea>
                 </div>
                 <div class="tecnologias">
                     <div><input type="checkbox" name="html"><label for="html"> HTML</label></div>
@@ -134,16 +135,15 @@
                 </div>
                 <div class="img-data">
                     <div class="imagem col-12 col-lg-6">
-                        <input type="file" class="col-12">
+                        <input type="file" name="imagem" class="col-12">
                         <div class="preview">
                         </div>
                     </div>
                     <div class="data col-12 col-lg-5">
-                        <div><label for="data-inicio">Data início</label><input type="date"></div>
-                        <div><label for="data-termino">Data término</label><input type="date"></div>
+                        <div><label for="data-inicio">Data início</label><input name="inicio" type="date"></div>
+                        <div><label for="data-termino">Data término</label><input name="termino" type="date"></div>
                     </div>
                 </div>
-                
                 <div class="submit"><input type="submit" value="Adicionar Projeto"></div>
             </form>      
         </div>
@@ -151,5 +151,6 @@
   </div>
 </div>
 @section('scripts')
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="js/welcome.js"></script>
 @endsection

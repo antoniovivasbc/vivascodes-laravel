@@ -213,7 +213,7 @@
     display: flex;
     justify-content: center;
 }
-#modal, #modal2{
+#modal, #modal2, #modal3, #modal4{
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.9);
@@ -335,7 +335,7 @@
 }
 .biblioteca div{
     color: white;
-    width: 32vw;
+    width: 520px;
     max-width:500px;
     min-width: 300px;
     height: 200px;
@@ -406,7 +406,7 @@
     .nav-item3{
         display: none;
     }
-    .titulo{
+    .titulo, #programming .titulo, #portfolio .titulo{
         font-size: 40px;
     }
     .apresentacao{
