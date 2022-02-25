@@ -162,7 +162,7 @@
                     <h3>Description</h3>
                     <div>
                         <p>
-                            Vivas Acessorios was my aunt's store, so I used this to make my first website. This website shows the products, but does not have a dashboard, everything is made manually on code.
+                            This website is a online course plataform, videos are integrated with vimeo, students can comment below the video and "finish class" to increase the course progress. There is a reCAPTCHA below the sign in form, and a session to recorvery the password via e-mail. It is a personal project to a friend. This website has an integration with hotmart API to receive the data from students that bought the course.
                         </p>
                     </div>
                 </div>
@@ -191,8 +191,8 @@
         <div class="biblioteca">
             <div onclick="modal()" id="plazza" class = "site" style="background-image: url(img/plazza.jpg);"><div onclick="modal()"  class = "filho">Plazza Veículos</div></div>
             <div onclick="modal2()" id="acougue" class = "site" style="background-image: url(img/fundo-acougue.jpg);"><div onclick="modal2()"  class = "filho">Açougue Do Fiel</div></div>
-            <div onclick="modal3()" id="vivasacessorios" class = "site" style="background-image: url(img/vivasacessorios.png);"><div onclick="modal3()"  class = "filho">Vivas Acessorios</div></div>
             <div onclick="modal4()" id="closerlanguagecenter" class = "site" style="background-image: url(img/closerlanguagecenter.jpg);"><div onclick="modal4()"  class = "filho">Closer Language Center</div></div>
+            <div onclick="modal3()" id="vivasacessorios" class = "site" style="background-image: url(img/vivasacessorios.png);"><div onclick="modal3()"  class = "filho">Vivas Acessorios</div></div>
         </div>
         <div id="footer">
             <p>© Copyright - <span>Vivas Codes</span></p>
