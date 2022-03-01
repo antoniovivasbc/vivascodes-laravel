@@ -34,3 +34,12 @@ function fecha_modal4(){
     modal_4.style.opacity = '0';
     modal_4.style.visibility = 'hidden'; 
 }
+var modal_5 = document.getElementById('modal5');
+function modal5(){
+    modal_5.style.visibility = 'visible';
+    modal_5.style.opacity = '1';
+}
+function fecha_modal5(){
+    modal_5.style.opacity = '0';
+    modal_5.style.visibility = 'hidden'; 
+}

@@ -213,7 +213,7 @@
     display: flex;
     justify-content: center;
 }
-#modal, #modal2, #modal3, #modal4{
+#modal, #modal2, #modal3, #modal4, #modal5{
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.9);
