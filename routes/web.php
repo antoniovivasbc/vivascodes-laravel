@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,10 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-
+Route::get('/', [ProjectController::class, 'index']);
+Route::post('/dashboard', [ProjectController::class, 'store']);
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

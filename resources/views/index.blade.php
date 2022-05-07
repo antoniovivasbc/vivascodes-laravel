@@ -67,150 +67,21 @@
             <div class='modal-content-container'>
                 <img onclick="fecha_modal()" id='close' src="img/close.png" alt="">
                 <div class='modal-content'>
-                    <h1>Plazza Veículos</h1>
+                    <h1 id="name"></h1>
                 </div>
                 <div class='descricao'>
                     <h3>Description</h3>
                     <div>
-                        <p>
-                            Plazza Veículos is a car store, its website has an interface for the clients and a dashboard where the employees can manage the cars (add, edit or remove). Currently this site is not an e-commerce.
+                        <p id="description">
                         </p>
                     </div>
                 </div>
                 <div class='tecnologias'>
                     <h3>Technologies</h3>
-                    <div>
-                        <img src="img/htmlimg.png" alt="">
-                        <img src="img/cssimg.png" alt="">
-                        <img src="img/jsimg.png" alt="">
-                        <img src="img/jqueryimg.png" alt="">
-                        <img src="img/phpimg.png" alt="">
-                        <img src="img/phpmailerimg.png" alt="">
-                        <img src="img/sqlimg.png" alt="">
-                    </div>
+                    <p id="tecnologies"></p>
                 </div>
                 <div class='modal-btn-container'>
                     <a href="https://www.plazzaveiculos.com.br" target="_blank"><button class='modal-btn right'>Visit the site</button></a>
-                </div>
-            </div>
-        </div>
-        <div id='modal2'>
-            <div class='modal-content-container'>
-                <img onclick="fecha_modal2()" id='close' src="img/close.png" alt="">
-                <div class='modal-content'>
-                    <h1>Açougue Do Fiel</h1>
-                </div>
-                <div class='descricao'>
-                    <h3>Description</h3>
-                    <div>
-                        <p>
-                            POS system for a bakery and grocery, the system has products register, edition, search, sales report and stock spreadsshee. The employee can only sell items.
-                        </p>
-                    </div>
-                </div>
-                <div class='tecnologias'>
-                    <h3>Technologies</h3>
-                    <div>
-                        <img src="img/htmlimg.png" alt="">
-                        <img src="img/cssimg.png" alt="">
-                        <img src="img/jsimg.png" alt="">
-                        <img src="img/jqueryimg.png" alt="">
-                        <img src="img/phpimg.png" alt="">
-                        <img src="img/ajaximg.png" alt="">
-                        <img src="img/sqlimg.png" alt="">
-                    </div>
-                </div>
-                <div class='modal-btn-container'>
-                    <a href="https://www.vivascodes.com/acouguedofiel" target="_blank"><button class='modal-btn left'>Link to test</button></a>
-                </div>
-            </div>
-        </div>
-        <div id='modal3'>
-            <div class='modal-content-container'>
-                <img onclick="fecha_modal3()" id='close' src="img/close.png" alt="">
-                <div class='modal-content'>
-                    <h1>Vivas Acessorios</h1>
-                </div>
-                <div class='descricao'>
-                    <h3>Description</h3>
-                    <div>
-                        <p>
-                            Vivas Acessorios was my aunt's store, so I used this to make my first website. This website shows the products, but does not have a dashboard, everything is made manually on code.
-                        </p>
-                    </div>
-                </div>
-                <div class='tecnologias'>
-                    <h3>Technologies</h3>
-                    <div>
-                        <img src="img/htmlimg.png" alt="">
-                        <img src="img/cssimg.png" alt="">
-                        <img src="img/jsimg.png" alt="">
-                    </div>
-                </div>
-                <div class='modal-btn-container'>
-                    <a href="https://www.vivascodes.com/vivasacessorios" target="_blank"><button class='modal-btn left'>Link to test</button></a>
-                </div>
-            </div>
-        </div>
-        <div id='modal4'>
-            <div class='modal-content-container'>
-                <img onclick="fecha_modal4()" id='close' src="img/close.png" alt="">
-                <div class='modal-content'>
-                    <h1>Closer Language Center</h1>
-                </div>
-                <div class='descricao'>
-                    <h3>Description</h3>
-                    <div>
-                        <p>
-                            This website is a online course plataform, videos are integrated with vimeo, students can comment below the video and "finish class" to increase the course progress. There is a reCAPTCHA below the sign in form, and a session to recorvery the password via e-mail. It is a personal project to a friend. This website has an integration with hotmart API to receive the data from students that bought the course.
-                        </p>
-                    </div>
-                </div>
-                <div class='tecnologias'>
-                    <h3>Technologies</h3>
-                    <div>
-                    <img src="img/htmlimg.png" alt="">
-                        <img src="img/cssimg.png" alt="">
-                        <img src="img/jsimg.png" alt="">
-                        <img src="img/jqueryimg.png" alt="">
-                        <img src="img/phpimg.png" alt="">
-                        <img src="img/phpmailerimg.png" alt="">
-                        <img src="img/ajaximg.png" alt="">
-                        <img src="img/sqlimg.png" alt="">
-                    </div>
-                </div>
-                <div class='modal-btn-container'>
-                    <a href="https://www.vivascodes.com/closerlanguagecenter" target="_blank"><button class='modal-btn left'>Link to test</button></a>
-                </div>
-            </div>
-        </div>
-        <div id='modal5'>
-            <div class='modal-content-container'>
-                <img onclick="fecha_modal5()" id='close' src="img/close.png" alt="">
-                <div class='modal-content'>
-                    <h1>La Molienda</h1>
-                </div>
-                <div class='descricao'>
-                    <h3>Description</h3>
-                    <div>
-                        <p>
-                            Institutional website with emphasis in web development performance using three.js, and e-mail contact through form. This website was a challenge about the front-end and time, so I tried to improve my bootstrap skills and I made it in about 2 weeks. I have looked for anime.js and three.js to find a way to make a good animation using javascript.
-                        </p>
-                    </div>
-                </div>
-                <div class='tecnologias'>
-                    <h3>Technologies</h3>
-                    <div>
-                    <img src="img/htmlimg.png" alt="">
-                        <img src="img/cssimg.png" alt="">
-                        <img src="img/jsimg.png" alt="">
-                        <img src="img/jqueryimg.png" alt="">
-                        <img src="img/phpimg.png" alt="">
-                        <img src="img/phpmailerimg.png" alt="">
-                    </div>
-                </div>
-                <div class='modal-btn-container'>
-                    <a href="https://www.vivascodes.com/lamolienda" target="_blank"><button class='modal-btn left'>Link to test</button></a>
                 </div>
             </div>
         </div>
@@ -219,11 +90,9 @@
             <img src="img/full-stack-development.gif" alt="">
         </div>
         <div class="biblioteca">
-            <div onclick="modal5()" id="lamolienda" class = "site" style="background-image: url(img/lamolienda.jpg);"><div onclick="modal5()"  class = "filho">La Molienda</div></div>
-            <div onclick="modal()" id="plazza" class = "site" style="background-image: url(img/plazza.jpg);"><div onclick="modal()"  class = "filho">Plazza Veículos</div></div>
-            <div onclick="modal2()" id="acougue" class = "site" style="background-image: url(img/fundo-acougue.jpg);"><div onclick="modal2()"  class = "filho">Açougue Do Fiel</div></div>
-            <div onclick="modal4()" id="closerlanguagecenter" class = "site" style="background-image: url(img/closerlanguagecenter.jpg);"><div onclick="modal4()"  class = "filho">Closer Language Center</div></div>
-            <div onclick="modal3()" id="vivasacessorios" class = "site" style="background-image: url(img/vivasacessorios.png);"><div onclick="modal3()"  class = "filho">Vivas Acessorios</div></div>
+            @foreach($projects->reverse() as $project)
+                <div onclick='modal("{{$project->name}}", "{{$project->description}}", "{{$project->tecnologies}}")'class = "site" style="background-image: url(img/{{$project->image}});"><div class = "filho">{{ $project->name }}</div></div>
+            @endforeach
         </div>
         <div id="footer">
             <p>© Copyright - <span>Vivas Codes</span></p>

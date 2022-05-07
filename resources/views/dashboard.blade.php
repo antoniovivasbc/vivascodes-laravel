@@ -112,21 +112,25 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form action="/vivascodes2.0/public/welcome" method="POST">
+        <form action="/dashboard" method="POST">
+            @csrf
                 <div class="nome">
-                    <input type="text" name="nome" placeholder="Nome">
+                    <input type="text" name="name" placeholder="Nome" required>
                 </div>
                 <div class="links">
-                    <input type="text" name="site" placeholder="Link do site">
-                    <input type="text" name="teste" placeholder="Link do teste">
+                    <input type="text" name="link_site" placeholder="Link do site">
+                    <input type="text" name="link_teste" placeholder="Link do teste">
                 </div>
                 <div class="descricao">
-                    <textarea name="descricao" placeholder="Descrição" id="" cols="30" rows="10"></textarea>
+                    <textarea name="description" placeholder="Descrição" id="" cols="30" rows="10" required></textarea>
                 </div>
-                <div class="tecnologias">
+                <div class="descricao">
+                    <textarea name="tecnologies" placeholder="Tenologies" id="" cols="30" rows="10" required></textarea>
+                </div>
+                <!--<div class="tecnologias">
                     <div><input type="checkbox" name="html"><label for="html"> HTML</label></div>
                     <div><input type="checkbox" name="css"><label for="css"> CSS</label></div>
-                    <div><input type="checkbox" name="javascript"><label for="javascript"> Javascript</label></div>
+                    <div><input type="checkbox" name="js"><label for="javascript"> Javascript</label></div>
                     <div><input type="checkbox" name="jquery"><label for="jquery"> JQuery</label></div>
                     <div><input type="checkbox" name="php"><label for="php"> PHP</label></div>
                     <div><input type="checkbox" name="laravel"><label for="laravel"> Laravel</label></div>
@@ -134,16 +138,16 @@
                     <div><input type="checkbox" name="bootstrap"><label for="bootstrap"> Bootstrap</label></div>
                     <div><input type="checkbox" name="ajax"><label for="ajax"> AJAX</label></div>
                     <div><input type="checkbox" name="sql"><label for="sql"> SQL</label></div>
-                </div>
+                </div>-->
                 <div class="img-data">
                     <div class="imagem col-12 col-lg-6">
-                        <input type="file" name="imagem" class="col-12">
+                        <input type="file" name="image" class="col-12" required>
                         <div class="preview">
                         </div>
                     </div>
                     <div class="data col-12 col-lg-5">
-                        <div><label for="data-inicio">Data início</label><input name="inicio" type="date"></div>
-                        <div><label for="data-termino">Data término</label><input name="termino" type="date"></div>
+                        <div><label for="data-inicio">Data início</label><input name="starts" type="date"></div>
+                        <div><label for="data-termino">Data término</label><input name="ends" type="date"></div>
                     </div>
                 </div>
                 <div class="submit"><input type="submit" value="Adicionar Projeto"></div>
@@ -153,8 +157,8 @@
   </div>
 </div>
 @section('scripts')
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<script src="js/welcome.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/welcome.js"></script>
 @endsection
     
 </x-app-layout>
