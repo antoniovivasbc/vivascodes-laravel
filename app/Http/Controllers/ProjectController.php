@@ -12,6 +12,10 @@ class ProjectController extends Controller
         $projects = Project::all();
         return view('index', ['projects' => $projects]);
     }
+    public function dashboard() {
+        $projects = Project::all();
+        return view('dashboard', ['projects' => $projects]);
+    }
     public function store(Request $request){
         $project = new project;
         $project->name = $request->name;
@@ -24,5 +28,9 @@ class ProjectController extends Controller
         $project->tecnologies = $request->tecnologies;
         $project->save();
         return redirect('/dashboard');
+    }
+    public function destroy($id){
+        Project::findOrFail($id)->delete();
+        return redirect('/dashboard')->with('msg', 'Projeto deletado com sucesso');
     }
 }
