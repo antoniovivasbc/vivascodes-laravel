@@ -168,7 +168,7 @@ h2{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-#preview{
+.preview{
     background-size: cover!important;
     background-position: center!important;
 }

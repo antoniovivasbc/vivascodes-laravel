@@ -53,44 +53,75 @@
             <div class="card">
                 <h5>Terminou um projeto?</h5>
                 <p>Que incrivel! Você terminou um projeto, adicione-o imediatamente no seu portfólio.</p>
-                <button data-bs-toggle="modal" data-bs-target="#exampleModalToggle2" type="button" class="botao">Adicionar um projeto</button>
+                <button data-bs-toggle="modal" data-bs-target="#exampleModalToggle1" type="button" class="botao">Adicionar um projeto</button>
             </div>
         </div>
         <div class="box remover col-lg-4 col-md-6 col-sm-12 col-12" id="remover" onmouseover="mudarCor('remover', '#FF807A', 'white', 'white')" onmouseout="mudarCor('remover', 'white', 'black', '#FF807A')">
             <div class="card">
                 <h5>Deseja remover um projeto?</h5>
                 <p>Caso haja algum problema com o seu projeto, basta removê-lo. Você pode adicioná-lo de volta.</p>
-                <button data-bs-toggle="modal" data-bs-target="#exampleModalToggle3" type="button" class="botao">Remover um projeto</button>
+                <button data-bs-toggle="modal" data-bs-target="#exampleModalToggle2" type="button" class="botao">Remover um projeto</button>
             </div>
         </div>
         <div class="box editar col-lg-4 col-md-6 col-sm-12 col-12" id="editar" onmouseover="mudarCor('editar', '#40D3F2', 'white', 'white')" onmouseout="mudarCor('editar', 'white', 'black', '#40D3F2')">
             <div class="card">
                 <h5>Que tal um upgrade?</h5>
                 <p>Sempre atualize seus projetos, tudo pode ficar melhor! Lembre-se de fazer um commit primeiro.</p>
-                <button data-bs-toggle="modal" data-bs-target="#exampleModalToggle" type="button"  class="botao">Editar um projeto</button>
+                <button data-bs-toggle="modal" data-bs-target="#exampleModalToggle3" type="button"  class="botao">Editar um projeto</button>
             </div>
         </div>
     </div>
-    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal fade" id="exampleModalToggle1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action=""  class="busca">
-                        <input placeholder="Search" type="text">
-                    </form>
-                    <div class="projetos">
-                        @foreach($projects->reverse() as $project)
-                            <div data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" style="background-image: url(img/{{$project->image}});" onclick='modalInfo("{{$project->id}}", "{{$project->name}}", "{{$project->link_site}}", "{{$project->link_teste}}", "{{$project->description}}", "{{$project->tecnologies}}", "{{$project->image}}", "{{$project->starts}}", "{{$project->ends}}")'></div>
-                        @endforeach
-                    </div>
+                    <form action="/dashboard" method="POST" enctype="multipart/form-data">
+                        @csrf
+                        <div class="nome">
+                            <input type="text" name="name" placeholder="Nome" required>
+                        </div>
+                        <div class="links">
+                            <input type="text" name="link_site" placeholder="Link do site">
+                            <input type="text" name="link_teste" placeholder="Link do teste">
+                        </div>
+                        <div class="descricao">
+                            <textarea name="description" placeholder="Descrição" cols="30" rows="10" required></textarea>
+                        </div>
+                        <div class="descricao">
+                            <textarea name="tecnologies" placeholder="Tenologies" cols="30" rows="10" required></textarea>
+                        </div>
+                        <!--<div class="tecnologias">
+                            <div><input type="checkbox" name="html"><label for="html"> HTML</label></div>
+                            <div><input type="checkbox" name="css"><label for="css"> CSS</label></div>
+                            <div><input type="checkbox" name="js"><label for="javascript"> Javascript</label></div>
+                            <div><input type="checkbox" name="jquery"><label for="jquery"> JQuery</label></div>
+                            <div><input type="checkbox" name="php"><label for="php"> PHP</label></div>
+                            <div><input type="checkbox" name="laravel"><label for="laravel"> Laravel</label></div>
+                            <div><input type="checkbox" name="phpmailer"><label for="phpmailer"> PHP Mailer</label></div>
+                            <div><input type="checkbox" name="bootstrap"><label for="bootstrap"> Bootstrap</label></div>
+                            <div><input type="checkbox" name="ajax"><label for="ajax"> AJAX</label></div>
+                            <div><input type="checkbox" name="sql"><label for="sql"> SQL</label></div>
+                        </div>-->
+                        <div class="img-data">
+                            <div class="imagem col-12 col-lg-6">
+                                <input type="file" name="image" class="col-12" required>
+                                <div class="preview" id="preview"></div>
+                            </div>
+                            <div class="data col-12 col-lg-5">
+                                <div><label for="data-inicio">Data início</label><input name="starts" type="date"></div>
+                                <div><label for="data-termino">Data término</label><input name="ends" type="date"></div>
+                            </div>
+                        </div>
+                        <div class="submit"><input type="submit" value="Adicionar Projeto"></div>
+                    </form>      
                 </div>
             </div>
         </div>
     </div>
-    <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
@@ -109,7 +140,26 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action=""  class="busca">
+                        <input placeholder="Search" type="text">
+                    </form>
+                    <div class="projetos">
+                        @foreach($projects->reverse() as $project)
+                            <div data-bs-target="#exampleModalToggle4" data-bs-toggle="modal" style="background-image: url(img/{{$project->image}});" onclick='modalInfo("{{$project->id}}", "{{$project->name}}", "{{$project->link_site}}", "{{$project->link_teste}}", "{{$project->description}}", "{{$project->tecnologies}}", "{{$project->image}}", "{{$project->starts}}", "{{$project->ends}}")'></div>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -122,8 +172,8 @@
                             <input id="name" type="text" name="name" placeholder="Nome" required>
                         </div>
                         <div class="links">
-                            <input type="text" name="link_site" placeholder="Link do site">
-                            <input type="text" name="link_teste" placeholder="Link do teste">
+                            <input id = "link_site" type="text" name="link_site" placeholder="Link do site">
+                            <input id = "link_teste"type="text" name="link_teste" placeholder="Link do teste">
                         </div>
                         <div class="descricao">
                             <textarea name="description" placeholder="Descrição" id="description" cols="30" rows="10" required></textarea>
@@ -145,15 +195,15 @@
                         </div>-->
                         <div class="img-data">
                             <div class="imagem col-12 col-lg-6">
-                                <input type="file" id="image" name="image" class="col-12" required>
-                                <div class="preview" id="preview"></div>
+                                <input type="file" id="image_update" name="image" class="col-12" required>
+                                <div class="preview" id="preview_update"></div>
                             </div>
                             <div class="data col-12 col-lg-5">
-                                <div><label for="data-inicio">Data início</label><input name="starts" type="date"></div>
-                                <div><label for="data-termino">Data término</label><input name="ends" type="date"></div>
+                                <div><label id = "stats" for="data-inicio">Data início</label><input name="starts" type="date"></div>
+                                <div><label id = "ends"for="data-termino">Data término</label><input name="ends" type="date"></div>
                             </div>
                         </div>
-                        <div class="submit"><input type="submit" value="Adicionar Projeto"></div>
+                        <div class="submit"><input type="submit" value="Atualizar Projeto"></div>
                     </form>      
                 </div>
             </div>

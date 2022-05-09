@@ -15,11 +15,22 @@ $('#image').bind('input', function() {
     preview.style.background = "url(img/"+fileName+") no-repeat ";
     console.log(fileName);
 });
-function modalInfo(id, name, link_site, link_teste, description, tecnologies, image, stats, ends){
+$('#image_update').bind('input', function() {
+    var preview = document.getElementById('preview_update');
+    var fileInput = document.getElementById('image_update');
+    var fileName = fileInput.files[0].name;
+    preview.style.background = "url(img/"+fileName+") no-repeat ";
+    console.log(fileName);
+});
+function modalInfo(id, name, link_site, link_teste, description, tecnologies, image, starts, ends){
     $('#name').val(name);
-    $('#name').val(name);
-    $('#name').val(name);
+    $('#link_site').val(link_site);
+    $('#link_teste').val(link_teste);
     $('#description').text(description);
+    $('#tecnologies').text(tecnologies);
+    $('#starts').text(starts);
+    $('#ends').text(ends);
+    document.getElementById('preview_update').style.background = "url(img/"+image+") no-repeat";
 }
 function setAction(id){
     document.getElementById("formDelete").action = "/dashboard/" + id;
