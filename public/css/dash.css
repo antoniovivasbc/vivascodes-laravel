@@ -162,10 +162,22 @@ h2{
     flex-wrap: wrap;
 }
 .projetos div{
-    background-image: url(../img/dashboard.png);
     background-size: cover;
     height: 150px;
     width: 300px;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+#preview{
+    background-size: cover!important;
+    background-position: center!important;
+}
+#modalConfirm .modal-dialog .modal-content{
+    background: white!important;
+}
+.btn-primary{
+    background-color: #0d6efd!important;
+}
+.btn-secondary{
+    background-color: #6c757d!important;
 }

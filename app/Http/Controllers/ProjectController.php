@@ -24,13 +24,22 @@ class ProjectController extends Controller
         $project->description = $request->description;
         $project->starts = $request->starts;
         $project->ends = $request->ends;
-        $project->image = $request->image;
         $project->tecnologies = $request->tecnologies;
+        // Image Upload
+        if($request->hasFile('image') && $request->file('image')->isValid()){
+            $requestImage = $request->image;
+            $extension = $requestImage->extension();
+            $imageName = md5($requestImage->getClientOriginalName() . strtotime("now")) . "." . $extension;
+            $request->image->move(public_path('img/'), $imageName);
+            $project->image = $imageName;
+        }
         $project->save();
-        return redirect('/dashboard');
+        return redirect('/dashboard')->with('msg', 'Projeto adicionado com sucesso!');
     }
     public function destroy($id){
         Project::findOrFail($id)->delete();
-        return redirect('/dashboard')->with('msg', 'Projeto deletado com sucesso');
+        return redirect('/dashboard')->with('msg', 'Projeto deletado com sucesso!');
     }
+    
+
 }
