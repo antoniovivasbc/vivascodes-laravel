@@ -107,7 +107,7 @@
                         </div>-->
                         <div class="img-data">
                             <div class="imagem col-12 col-lg-6">
-                                <input type="file" name="image" class="col-12" required>
+                                <input type="file" id = "image"name="image" class="col-12" required>
                                 <div class="preview" id="preview"></div>
                             </div>
                             <div class="data col-12 col-lg-5">
@@ -128,9 +128,6 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action=""  class="busca">
-                        <input placeholder="Search" type="text">
-                    </form>
                     <div class="projetos">
                         @foreach($projects->reverse() as $project)
                             <div data-bs-target="#modalConfirm" data-bs-toggle="modal" style="background-image: url(img/{{$project->image}});" onclick='setAction("{{ $project->id }}")'></div>
@@ -147,9 +144,6 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action=""  class="busca">
-                        <input placeholder="Search" type="text">
-                    </form>
                     <div class="projetos">
                         @foreach($projects->reverse() as $project)
                             <div data-bs-target="#exampleModalToggle4" data-bs-toggle="modal" style="background-image: url(img/{{$project->image}});" onclick='modalInfo("{{$project->id}}", "{{$project->name}}", "{{$project->link_site}}", "{{$project->link_teste}}", "{{$project->description}}", "{{$project->tecnologies}}", "{{$project->image}}", "{{$project->starts}}", "{{$project->ends}}")'></div>
@@ -166,20 +160,21 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="/dashboard" method="POST" enctype="multipart/form-data">
+                    <form id="update_form" method="POST" enctype="multipart/form-data">
                         @csrf
+                        @method('PUT')
                         <div class="nome">
-                            <input id="name" type="text" name="name" placeholder="Nome" required>
+                            <input id="name" type="text" name="name" placeholder="Nome">
                         </div>
                         <div class="links">
                             <input id = "link_site" type="text" name="link_site" placeholder="Link do site">
                             <input id = "link_teste"type="text" name="link_teste" placeholder="Link do teste">
                         </div>
                         <div class="descricao">
-                            <textarea name="description" placeholder="Descrição" id="description" cols="30" rows="10" required></textarea>
+                            <textarea name="description" placeholder="Descrição" id="description" cols="30" rows="10"></textarea>
                         </div>
                         <div class="descricao">
-                            <textarea name="tecnologies" placeholder="Tenologies" id="tecnologies" cols="30" rows="10" required></textarea>
+                            <textarea name="tecnologies" placeholder="Tenologies" id="tecnologies" cols="30" rows="10"></textarea>
                         </div>
                         <!--<div class="tecnologias">
                             <div><input type="checkbox" name="html"><label for="html"> HTML</label></div>
@@ -195,7 +190,7 @@
                         </div>-->
                         <div class="img-data">
                             <div class="imagem col-12 col-lg-6">
-                                <input type="file" id="image_update" name="image" class="col-12" required>
+                                <input type="file" id="image_update" name="image" class="col-12">
                                 <div class="preview" id="preview_update"></div>
                             </div>
                             <div class="data col-12 col-lg-5">

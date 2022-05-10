@@ -31,6 +31,7 @@ function modalInfo(id, name, link_site, link_teste, description, tecnologies, im
     $('#starts').text(starts);
     $('#ends').text(ends);
     document.getElementById('preview_update').style.background = "url(img/"+image+") no-repeat";
+    document.getElementById("update_form").action = "/dashboard/" + id;
 }
 function setAction(id){
     document.getElementById("formDelete").action = "/dashboard/" + id;

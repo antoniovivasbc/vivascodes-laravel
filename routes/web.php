@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProjectController;
+use GuzzleHttp\Middleware;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,8 +16,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [ProjectController::class, 'index']);
-Route::post('/dashboard', [ProjectController::class, 'store']);
-Route::delete('/dashboard/{id}', [ProjectController::class, 'destroy']);
+Route::post('/dashboard', [ProjectController::class, 'store'])->Middleware('auth');
+Route::delete('/dashboard/{id}', [ProjectController::class, 'destroy'])->Middleware('auth');
+Route::put('/dashboard/{id}', [ProjectController::class, 'edit'])->Middleware('auth');
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->group(function () {
     Route::get('/dashboard', [ProjectController::class, 'dashboard'])->name('dashboard');
 });

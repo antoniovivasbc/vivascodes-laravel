@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\File;
 use App\Models\Project;
 
 class ProjectController extends Controller
@@ -37,9 +37,30 @@ class ProjectController extends Controller
         return redirect('/dashboard')->with('msg', 'Projeto adicionado com sucesso!');
     }
     public function destroy($id){
-        Project::findOrFail($id)->delete();
+        $project = Project::findOrFail($id);
+        $direct = 'img/'.$project->image;
+        if(File::exists($direct)){
+            File::delete($direct);
+        } 
+        $project->delete();
         return redirect('/dashboard')->with('msg', 'Projeto deletado com sucesso!');
     }
-    
+    public function edit(Request $request){
+        $data = $request->all();
+        if($request->hasFile('image') && $request->file('image')->isValid()){
+            $project = Project::findOrFail($request->id);
+            $direct = 'img/'.$project->image;
+            if(File::exists($direct)){
+                File::delete($direct);
+            } 
+            $requestImage = $request->image;
+            $extension = $requestImage->extension();
+            $imageName = md5($requestImage->getClientOriginalName() . strtotime("now")) . "." . $extension;
+            $request->image->move(public_path('img/'), $imageName);
+            $data['image'] = $imageName;
+        }
+        Project::findOrFail($request->id)->update($data);
+        return redirect('/dashboard')->with('msg', 'Projeto atualizado com sucesso!');
+    }
 
 }
