@@ -81,7 +81,7 @@
                     <p id="tecnologies"></p>
                 </div>
                 <div class='modal-btn-container'>
-                    <a href="https://www.plazzaveiculos.com.br" target="_blank"><button class='modal-btn right'>Visit the site</button></a>
+                    <a href="" id = "link" target="_blank"><button class='modal-btn right'>Visit the site</button></a>
                 </div>
             </div>
         </div>
@@ -91,7 +91,7 @@
         </div>
         <div class="biblioteca">
             @foreach($projects->reverse() as $project)
-                <div onclick='modal("{{$project->name}}", "{{$project->description}}", "{{$project->tecnologies}}")'class = "site" style="background-image: url(img/{{$project->image}});"><div class = "filho">{{ $project->name }}</div></div>
+                <div onclick='modal("{{$project->name}}", "{{$project->link}}", "{{$project->description}}", "{{$project->tecnologies}}", "{{$project->link}}")'class = "site" style="background-image: url(img/{{$project->image}});"><div class = "filho">{{ $project->name }}</div></div>
             @endforeach
         </div>
         <div id="footer">

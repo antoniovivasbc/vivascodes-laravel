@@ -19,8 +19,7 @@ class ProjectController extends Controller
     public function store(Request $request){
         $project = new project;
         $project->name = $request->name;
-        $project->link_site = $request->link_site;
-        $project->link_teste = $request->link_teste;
+        $project->link = $request->link;
         $project->description = $request->description;
         $project->starts = $request->starts;
         $project->ends = $request->ends;

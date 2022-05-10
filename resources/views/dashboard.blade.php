@@ -84,8 +84,7 @@
                             <input type="text" name="name" placeholder="Nome" required>
                         </div>
                         <div class="links">
-                            <input type="text" name="link_site" placeholder="Link do site">
-                            <input type="text" name="link_teste" placeholder="Link do teste">
+                            <input type="text" name="link" placeholder="Link do site">
                         </div>
                         <div class="descricao">
                             <textarea name="description" placeholder="Descrição" cols="30" rows="10" required></textarea>
@@ -146,7 +145,7 @@
                 <div class="modal-body">
                     <div class="projetos">
                         @foreach($projects->reverse() as $project)
-                            <div data-bs-target="#exampleModalToggle4" data-bs-toggle="modal" style="background-image: url(img/{{$project->image}});" onclick='modalInfo("{{$project->id}}", "{{$project->name}}", "{{$project->link_site}}", "{{$project->link_teste}}", "{{$project->description}}", "{{$project->tecnologies}}", "{{$project->image}}", "{{$project->starts}}", "{{$project->ends}}")'></div>
+                            <div data-bs-target="#exampleModalToggle4" data-bs-toggle="modal" style="background-image: url(img/{{$project->image}});" onclick='modalInfo("{{$project->id}}", "{{$project->name}}", "{{$project->link}}", "{{$project->description}}", "{{$project->tecnologies}}", "{{$project->image}}", "{{$project->starts}}", "{{$project->ends}}")'></div>
                         @endforeach
                     </div>
                 </div>
@@ -167,8 +166,7 @@
                             <input id="name" type="text" name="name" placeholder="Nome">
                         </div>
                         <div class="links">
-                            <input id = "link_site" type="text" name="link_site" placeholder="Link do site">
-                            <input id = "link_teste"type="text" name="link_teste" placeholder="Link do teste">
+                            <input id = "link" type="text" name="link" placeholder="Link do site">
                         </div>
                         <div class="descricao">
                             <textarea name="description" placeholder="Descrição" id="description" cols="30" rows="10"></textarea>

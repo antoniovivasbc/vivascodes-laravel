@@ -17,8 +17,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string("name");
-            $table->string("link_site")->nullable();
-            $table->string("link_teste")->nullable();
+            $table->string("link");
             $table->string("description");
             $table->string("starts")->nullable();
             $table->string("ends")->nullable();

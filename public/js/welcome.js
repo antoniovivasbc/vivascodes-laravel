@@ -22,10 +22,9 @@ $('#image_update').bind('input', function() {
     preview.style.background = "url(img/"+fileName+") no-repeat ";
     console.log(fileName);
 });
-function modalInfo(id, name, link_site, link_teste, description, tecnologies, image, starts, ends){
+function modalInfo(id, name, link, description, tecnologies, image, starts, ends){
     $('#name').val(name);
-    $('#link_site').val(link_site);
-    $('#link_teste').val(link_teste);
+    $('#link').val(link);
     $('#description').text(description);
     $('#tecnologies').text(tecnologies);
     $('#starts').text(starts);

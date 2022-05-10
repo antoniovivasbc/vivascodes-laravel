@@ -1,8 +1,9 @@
 var modal_1 = document.getElementById('modal');
-function modal(name, description, tecnologies){
+function modal(name, link, description, tecnologies){
     $('#description').text(description);
     $('#name').text(name);
-    $('#tecnologies').text(tecnologies)
+    document.getElementById('link').href = link;
+    $('#tecnologies').text(tecnologies);
     modal_1.style.visibility = 'visible';
     modal_1.style.opacity = '1';
 }
