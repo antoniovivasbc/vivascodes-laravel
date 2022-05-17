@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
 @section('content')
 <section id= "home">
+    <?php echo "ola" ?>
         <div class="mascara">
             <div class = "nav">
                 <div class='toggle-btn'>
