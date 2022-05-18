@@ -196,7 +196,7 @@
                                 <div><label id = "ends"for="data-termino">Data término</label><input name="ends" type="date"></div>
                             </div>
                         </div>
-                        <div class="submit"><input type="submit" value="Atualizar Projeto"></div>
+                        <div class="submit"><input type="submit" value="Atualizar Projeto" style="background-color: #40D3F2;"></div>
                     </form>      
                 </div>
             </div>
