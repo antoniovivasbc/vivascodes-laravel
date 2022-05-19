@@ -1,0 +1,75 @@
+
+/* animação*/
+[data-anime]{
+    opacity: 0.0;
+    transition: .5s;
+}
+
+[data-anime="up"]{
+    transform: translate3d(0, 50px, 0);
+}
+
+[data-anime].animate{
+    opacity: 1.0;
+    transform: translate3d(0, 0, 0);
+}
+/*FIM ANIMAÇÃO*/
+
+#titulo2{
+    font-family: 'Bad Script', cursive;
+    font-size: 40px;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+.reg{
+    color: black;
+    border-bottom: solid black 1px;
+    text-decoration: none;
+}
+
+/*CONTEUDO*/
+#coleção{
+    width: 100%;
+}
+#botao{
+    display: flex;
+    justify-content: flex-end;
+}
+.fotos img{
+    width: 100%;
+}
+li{
+    width: 100%;
+}
+.fotos, .precos{
+    display: flex;
+    flex-direction: row;
+}
+.precos{
+    justify-content: center;
+}
+#carrinho{
+    width: 2vw;
+}
+#botoes, #next{
+    border-color: yellow;
+    border-radius: 50px;
+    border-style: outset;
+    padding: 5px;
+    display: flex;
+    width: auto;
+    justify-content: center;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    background-color: #FFDC01;
+}
+#space{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+

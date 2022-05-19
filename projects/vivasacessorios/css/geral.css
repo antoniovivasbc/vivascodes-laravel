@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Poiret+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+/*NAVBAR*/
+nav{
+    background-color: #FFDC01;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+nav img{
+    height: 8vh;
+}
+#navbarNav a{
+    font-size: 20px;
+    padding: 10px;
+}
+nav div a:hover{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+a:link{
+    padding: 0;
+    color: black;
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+}
+
+#pesquisa{
+    width: min-content;
+    height: min-content; 
+}
+/*FIM NAVBAR*/
+
+section{
+    padding-top: 5%;
+}
+
+.titulo{
+    font-family: 'Poiret One', cursive;
+    font-size: 60px;
+    color: #702F8E;
+    padding-top: 10vh;
+    margin-bottom: 5vh;
+    font-weight: bold;
+}
+
+/* FOOTER */
+#foot{
+    width: 100%;
+    background-color: rgba(0, 0, 0);
+    color: white;
+    padding: 1vw;
+    display: flex;
+}
+#foot a{
+    color: white;
+}
+
+.enviamos{
+    font-size: larger;
+}
+
+.img img{
+    margin-right: 1vw;
+    width: 8%;
+}
+#foot div{
+    width: 100%;
+}
+.foottext{
+ padding: 1vw;
+ text-align: center;
+ padding-top: 10vh;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+/* RESPONSIVIDADE */
+@media only screen and (max-width: 1000px){
+    section{
+        padding-top: 0px;
+    }
+    #botoes, #next a{
+        padding: 0;
+        margin: 0;
+        font-size: 8px;
+    }
+    li{
+        font-size: 10px;
+    }
+    .titulo{
+        font-size: 30px;
+        padding-top: 20vh;
+    }
+    #foot img{
+        width: 40px;
+        margin-right: 1vw;
+        padding-left: 1vw;
+    }
+    #navbarNav a{
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+    .ul1 li{
+        display: flex;  
+        flex-direction: column;
+        font-size: 8px;
+    }
+    #preço li{
+        font-size: 5px;
+        padding: 0px;
+    }
+    #titulo2{
+        font-size: 28px;
+    }
+    #foot{
+        display: flex;
+        flex-direction: column;
+        padding: 2vh;
+    }
+    .foottext{
+        padding-top: 1vh;
+    }
+}

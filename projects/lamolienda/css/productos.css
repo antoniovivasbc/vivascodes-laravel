@@ -1,0 +1,61 @@
+section{
+    width: 100vw;
+    margin-top: 20px;
+}
+.cards{
+    width: 90vw;
+    margin-left: 5vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.card{
+    background-image: url(../img/image-18.png);
+    background-size: cover;
+    width: 650px;
+    height: 450px;
+    border-radius: 5px!important;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Varela Round', sans-serif;
+}
+.enpanadilla{
+    background-image: url(../img/enpanadilla.jpg);
+}
+.tarta{
+    background-image: url(../img/tarta.jpg);
+}
+.panetone{
+    background-image: url(../img/panetone.jpeg);
+}
+.card div{
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    margin-right: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    padding: 10px;
+    overflow:hidden;
+    transition: .3s;
+}
+.card div h4{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.card:hover div{
+    padding: 0;
+    height: 0px;
+}
+@media screen and (max-width:800px){
+    .card div{
+        margin-right: auto;
+        text-align: center;
+    }
+
+}
+@media screen and (max-width:359px){
+    .card div{
+        width: 250px;
+    }
+}
