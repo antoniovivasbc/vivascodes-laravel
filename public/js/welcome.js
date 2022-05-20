@@ -9,18 +9,18 @@ function mudarCor(id, bg, letra, botao){
     button[0].style.color = bg;
 }
 $('#image').bind('input', function() {
-    var preview = document.getElementById('preview');
+    console.log("oi")
     var fileInput = document.getElementById('image');
-    var fileName = fileInput.files[0].name;
-    preview.style.background = "url(img/"+fileName+") no-repeat ";
-    console.log(fileName);
-});
+    var preview = document.getElementById("preview")
+    var file = fileInput.files[0];
+    preview.src = URL.createObjectURL(file);
+});  
+
 $('#image_update').bind('input', function() {
     var preview = document.getElementById('preview_update');
     var fileInput = document.getElementById('image_update');
-    var fileName = fileInput.files[0].name;
-    preview.style.background = "url(img/"+fileName+") no-repeat ";
-    console.log(fileName);
+    var file = fileInput.files[0];
+    preview.src = URL.createObjectURL(file);
 });
 function modalInfo(id, name, link, description, tecnologies, image, starts, ends){
     $('#name').val(name);

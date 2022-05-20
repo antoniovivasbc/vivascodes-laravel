@@ -53,7 +53,7 @@
                 <div class="ajuste-form">
                     <form action="" method="POST">
                         <input type="text" name="nome1" placeholder="Nome" value = "funcionario" autocomplete = "off"> <br>
-                        <input type="password" name="senha1" placeholder ="Senha" value = "funcionario" autocomplete = "off"> <br>
+                        <input type="password" name="senha1" placeholder ="Senha" value = "1234" autocomplete = "off"> <br>
                         <div class='flexbox'>
                             <input type="submit" class="envia" name="envia1">
                         </div>
@@ -72,7 +72,7 @@
                 <div class="ajuste-form">
                     <form action="" method="POST">
                         <input type="text" name="nome2" placeholder="Nome" value="adm" autocomplete = "off"> <br>
-                        <input type="password" name="senha2" placeholder ="Senha" value = "adm" autocomplete = "off"> <br>
+                        <input type="password" name="senha2" placeholder ="Senha" value = "1234" autocomplete = "off"> <br>
                         <div class='flexbox'>
                             <input type="submit" class="envia" name="envia2">
                         </div>
