@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+*, p, img, div{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+span{
+    font-family: 'Fredoka One', cursive;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+section{
+    min-height: 100vh;
+    min-width: 100%;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    background-color: rgb(255, 255, 255);
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #202024;
+    border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/*NAVBAR*/
+nav{
+    width: 100%;
+    height: 8vh;
+    background-color: #202024;
+    display: flex;
+    justify-content: space-between;
+}
+.container3{
+    display: flex;
+    justify-content: space-around;
+    padding-right: 10px;
+    white-space: nowrap;
+    padding-left: 10px;
+}
+.container3 p{
+    position: relative;
+    top: 30%;
+    text-overflow: ellipsis;
+    overflow:hidden;
+    white-space: nowrap;
+    width: 200px;
+    padding-left: 10px;
+}
+.container3 a{
+    position: relative;
+    top: 30%;
+    overflow:hidden;
+    white-space: nowrap;
+    padding-left: 5px;
+}
+.back{
+    padding-top: 3px;
+}
+.perfil{
+    height: 70%;
+    position: relative;
+    top: 15%;
+}
+.arrow3{
+    height: 3vh;
+    position: relative;
+    top: 31.25%;
+}
+.arrow3:hover{
+    cursor: pointer;
+}
+.dropdown-content{
+    position: absolute;
+    top: 0;
+    margin-top: 8vh;
+    right: 0;
+    width: 120px;
+    height: 0px;
+    background-color: #202024;
+    z-index: 999;
+    transition: .5s;
+    overflow-y: hidden;
+    box-shadow: 1px 1px 10px black;
+}
+.dropdown-list li{
+    margin-top: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.dropdown-list li a img{
+    width: 15px;
+    height: 15px;
+}
+.arrow-back{
+    transform: rotate(90deg);
+    top:0
+}
+/*NAVBAR END*/
+/*CONTENT*/
+.content{
+    color: black;
+    display: flex;
+    width: 70vw;
+    justify-content: space-around;
+    position: relative;
+    left: 10vw;
+    margin-top: 8vh;
+    
+}
+h4{
+    color: rgba(0, 0, 0, 0.6);
+}
+.form-container{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    width: 35vw;
+    min-height: 20vh;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+.form-container input, .form-container div{
+    width: 30vw;
+    margin-left: 2vw;
+    margin-top: 3.5vh;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    height: 30px;
+    padding-left: 1vw;
+}
+.form-container div{
+    padding-top: 5px;
+    margin-top: 3vh;
+}
+form a{
+    color: black;
+    margin-left: 3vw;
+}
+.current-password{
+    margin-bottom: 1vh;
+}
+input:focus{
+    outline: 0;
+}
+.verify{
+    margin-bottom: 4vh;
+}
+.save{
+    background-color: #3D0B32;
+    color: white;
+    width: 80px;
+    height: 40px;
+    position: relative;
+    left: 69vw;
+    border-radius: 10px;
+    margin-top: 2vh;
+}
+hr{
+    margin-top: 8vh;
+    width: 80vw;
+    position: relative;
+    left: 10vw;
+}
+@media screen and (max-width:500px){
+    nav{
+        height: 6vh;
+    }
+    .dropdown-content {
+        margin-top: 6vh;
+    }
+    .container3 p{
+        width: 25vw;
+    }
+    .content{
+        width: 90vw;
+        display: block;
+    }
+    h1{
+        font-size: 20px;
+    }
+    h4{
+        font-size: 14px;
+    }
+    .form-container{
+        margin-top: 5vh;
+        width: 80vw;
+    }
+    .form-container input, .form-container div{
+        width: 70vw;
+        margin-left: 4vw;
+        padding-left: 2vw;
+    }
+    .form-container div{
+        font-size: 14px;
+        text-overflow: ellipsis;
+    }
+    .email{
+        margin-bottom: 3vh;
+    }
+    form a{
+        font-size: 14px;
+        margin-left: 6vw;
+    }
+    .save{
+        margin-bottom: 2vh;
+    }
+}

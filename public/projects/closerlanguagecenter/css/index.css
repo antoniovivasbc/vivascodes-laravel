@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+section{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/bg-closer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mascara{
+    position: relative;
+    left: 5vw;
+    height: 100vh;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.container{
+    position: relative;
+    top: 15vh;
+    width: 80%;
+    margin-left: 10%;
+    background-color: white;
+    border-radius: 30px;
+    padding-bottom: 50px;
+}
+.logo{
+    width: 100%;
+    border-radius: 30px;
+}
+form{
+    height: 50%;
+    text-align: center;
+}
+form input{
+    position: relative;
+    height: 50px;
+    width: 70%;
+    border-radius: 90px;
+    background-color: #3D0B32;
+    border: none;
+    margin-bottom: 5%;
+    color: white;
+    font-weight: bold;
+    padding-left: 10%;
+}
+form p{
+    color: red;
+    font-weight: 500;
+}
+.enviar{
+    width: 50%;
+    color: white;
+    font-weight: bolder;
+    margin-top: 10%;
+    padding-left: 0;
+}
+.enviar:hover{
+    cursor: pointer;
+}
+.passfgt{
+    color: #3D0B32;
+    font-weight: bolder;
+    font-size: 15px;
+}
+::-webkit-input-placeholder {
+    color: white;
+}
+input:focus{
+    outline: 0;
+}
+.captcha-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 500px){
+    .mascara{
+        width: 100vw;
+        left: 0;
+    }
+    .container{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
