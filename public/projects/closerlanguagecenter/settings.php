@@ -20,26 +20,26 @@ if(isset($_GET['logout'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Closer Language Center</title>
-    <link rel="stylesheet" href="css/settings.css">
+    <link rel="stylesheet" href="/projects/closerlanguagecenter/css/settings.css">
 </head>
 <body>
     <section>
         <nav>
             <div class="container3">
                 <div>
-                    <?php echo"<a href='course.php?email=$email&name=$name&id=$id'><img class='arrow3 arrow-back' src='img/arrow3.png' alt=''> </a>";?>
+                    <?php echo"<a href='/projects/closerlanguagecenter/course.php?email=$email&name=$name&id=$id'><img class='arrow3 arrow-back' src='/projects/closerlanguagecenter/img/arrow3.png' alt=''> </a>";?>
                 </div>
-                <?php echo"<a class='back' href='course.php?email=$email&name=$name&id=$id'> Get back to course </a>";?>
+                <?php echo"<a class='back' href='/projects/closerlanguagecenter/course.php?email=$email&name=$name&id=$id'> Get back to course </a>";?>
             </div>
             <div class="container3">
-                <img class="perfil" src="img/perfil.png" alt="">
+                <img class="perfil" src="/projects/closerlanguagecenter/img/perfil.png" alt="">
                 <?php echo"<p>$name</p>";?>
                 <div>
-                    <img onclick="dropdown()" class="arrow3" src="img/arrow3.png" alt=""> 
+                    <img onclick="dropdown()" class="arrow3" src="/projects/closerlanguagecenter/img/arrow3.png" alt=""> 
                     <div class="dropdown-content">
                         <ul class="dropdown-list">
-                        <li onclick="movetosettings()"><?php echo"<a href='settings.php?email=$email&name=$name&id=$id'><img src='img/settings.png' alt=''> Settings</a>"; ?></li>
-                            <li onclick="movetohome()"> <a href="?logout"><img src="img/log-out.png" alt=""> Logout</a></li>
+                        <li onclick="movetosettings()"><?php echo"<a href='/projects/closerlanguagecenter/settings.php?email=$email&name=$name&id=$id'><img src='/projects/closerlanguagecenter/img/settings.png' alt=''> Settings</a>"; ?></li>
+                            <li onclick="movetohome()"> <a href="/projects/closerlanguagecenter/?logout"><img src="/projects/closerlanguagecenter/img/log-out.png" alt=""> Logout</a></li>
                         </ul>
                     </div>
                 </div>
@@ -65,7 +65,7 @@ if(isset($_GET['logout'])){
             <div class="form-container">
                 <form id="form1">
                     <input type="text" class="current-password" placeholder="Current Password">
-                    <a class = "fgt" href="forgot.php">Forgot password?</a>
+                    <a class = "fgt" href="/projects/closerlanguagecenter/forgot.php">Forgot password?</a>
                     <input type="text" placeholder="New Password">
                     <input class="verify" type="text" placeholder="Verify Password">
                 </form>
@@ -74,7 +74,7 @@ if(isset($_GET['logout'])){
         <hr>
         <input type="submit" class="save" value="Save" form="form1">
     </section>
-    <script src="js/jquery.js"></script>
-    <script src="js/main.js"></script>
+    <script src="/projects/closerlanguagecenter/js/jquery.js"></script>
+    <script src="/projects/closerlanguagecenter/js/main.js"></script>
 </body>
 </html>

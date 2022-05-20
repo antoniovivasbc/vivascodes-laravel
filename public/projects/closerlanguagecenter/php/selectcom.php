@@ -1,8 +1,5 @@
 <?php
-    $host = "localhost";
-    $usuario = "closerla_antonio";
-    $senha = "12345";
-    $bd = "closerla_closerlanguage";
+    include("../conexao/conexao.php");
     $mysqli = new mysqli($host, $usuario, $senha, $bd);
     header('Content-Type: application/json');
     $select = "SELECT * FROM comment";

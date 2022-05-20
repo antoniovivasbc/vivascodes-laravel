@@ -14,8 +14,7 @@
 </head>
 <body>
     <section>
-        <div class='logo-container'><img class="logo" src="projects/plazzaveiculosCRUD/img/logo2.png" alt=""></div>
-        
+        <div class='logo-container'><img class="logo" src="/projects/plazzaveiculosCRUD/img/logo2.png" alt=""></div>
         <div class='form-container'>
             <form method="POST">
                 <h2>Login</h2>
