@@ -41,7 +41,8 @@ if(isset($_GET['deslogar'])){
                     <br><h2>CADASTRO DE PRODUTOS</h2><br><br>
                 </div>
                 <div class="ajuste-form">
-                    <form action="php/enviaCad.php" method="POST">
+                    <form action="" method="POST">
+                    <?php include("php/enviaCad.php") ?>
                         <div class="descricao">
                             <input type="text" placeholder="Descrição" name="desc" autofocus autocomplete = "off">
                         </div><br>

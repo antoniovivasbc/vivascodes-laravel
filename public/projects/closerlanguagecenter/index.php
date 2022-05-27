@@ -19,8 +19,8 @@ include("conexao/conexao.php");
             <div class="container">
                 <img class="logo" src="/projects/closerlanguagecenter/img/Closer-logo-1.jpg" alt="">
                 <form method="POST">
-                    <input type="email" placeholder="E-mail" name="email" required>
-                    <input type="password" placeholder="Password" name="password" required> <br>
+                    <input type="email" placeholder="E-mail" value = "student@student.com" name="email" required>
+                    <input type="password" placeholder="Password" value="12345" name="password" required> <br>
                     <?php include("php/recaptcha.php"); ?>
                     <div class="captcha-container">
                         <div class="g-recaptcha" data-sitekey="6LdguZ8eAAAAAKmE4u_t6jhOqA12MbbVn4ixfAk7"></div>

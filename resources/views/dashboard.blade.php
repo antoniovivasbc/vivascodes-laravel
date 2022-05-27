@@ -107,7 +107,6 @@
                         <div class="img-data">
                             <div class="imagem col-12 col-lg-6">
                                 <input type="file" id = "image"name="image" class="col-12" required>
-                                <img class="preview" id="preview" src="asd">
                             </div>
                             <div class="data col-12 col-lg-5">
                                 <div><label for="data-inicio">Data início</label><input name="starts" type="date"></div>

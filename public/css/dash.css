@@ -118,6 +118,8 @@ h2{
 }
 .preview{
     height: 200px;
+    width: 355px;
+    max-width: 355px;
 }
 .data div{
     display: flex;
