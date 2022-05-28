@@ -61,5 +61,17 @@ class ProjectController extends Controller
         Project::findOrFail($request->id)->update($data);
         return redirect('/dashboard')->with('msg', 'Projeto atualizado com sucesso!');
     }
+    public function swap($id1, $id2){
+        $projectOnDrag = Project::findOrFail($id1);
+        $projectUnder = Project::findOrFail($id2);
+        $projectOnDrag->id = 0;
+        $projectOnDrag->save();
+        $projectUnder->id = $id1;
+        $projectUnder->save();
+        $projectOnDrag->id = $id2;
+        $projectOnDrag->save();
+        return redirect('/dashboard')->with('msg', 'Projeto atualizado com sucesso!');
 
+
+    }
 }

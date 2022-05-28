@@ -168,6 +168,11 @@ h2{
     width: 300px;
     margin-top: 20px;
     margin-bottom: 20px;
+    transition: .4s;
+}
+.projetos div:hover{
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
 }
 .preview{
     background-size: cover!important;

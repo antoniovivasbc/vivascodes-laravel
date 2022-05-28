@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/fav-icon.png" type="image/x-icon">
 @section('content')
 <section id= "home">
         <div class="mascara">

@@ -129,7 +129,7 @@
                 <div class="modal-body">
                     <div class="projetos">
                         @foreach($projects->reverse() as $project)
-                            <div data-bs-target="#modalConfirm" data-bs-toggle="modal" style="background-image: url(img/{{$project->image}});" onclick='setAction("{{ $project->id }}")'></div>
+                            <div draggable="true" data-index='{{$project->id}}' data-bs-target="#modalConfirm" data-bs-toggle="modal" style="background-image: url(img/{{$project->image}});" onclick='setAction("{{ $project->id }}")'></div>
                         @endforeach
                     </div>
                 </div>
@@ -145,7 +145,7 @@
                 <div class="modal-body">
                     <div class="projetos">
                         @foreach($projects->reverse() as $project)
-                            <div data-bs-target="#exampleModalToggle4" data-bs-toggle="modal" style="background-image: url(img/{{$project->image}});" onclick='modalInfo("{{$project->id}}", "{{$project->name}}", "{{$project->link}}", "{{$project->description}}", "{{$project->tecnologies}}", "{{$project->image}}", "{{$project->starts}}", "{{$project->ends}}")'></div>
+                            <div draggable="true" data-index='{{$project->id}}' data-bs-target="#exampleModalToggle4" data-bs-toggle="modal" style="background-image: url(img/{{$project->image}});" onclick='modalInfo("{{$project->id}}", "{{$project->name}}", "{{$project->link}}", "{{$project->description}}", "{{$project->tecnologies}}", "{{$project->image}}", "{{$project->starts}}", "{{$project->ends}}")'></div>
                         @endforeach
                     </div>
                 </div>
@@ -219,6 +219,7 @@
     @section('scripts')
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <script src="js/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="js/welcome.js"></script>
     @endsection
 </x-app-layout>

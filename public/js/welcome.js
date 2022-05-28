@@ -35,3 +35,51 @@ function modalInfo(id, name, link, description, tecnologies, image, starts, ends
 function setAction(id){
     document.getElementById("formDelete").action = "/dashboard/" + id;
 }
+function setDataIndex(){
+    $('.projetos').each(function (){
+        $(this).children().each(function (i){
+            $(this).attr('data-index', i + 1);
+        })
+    })
+}
+// Drag and drop
+function dragStart (){
+    taskOnDrag = $(this);
+}
+function dragOver (event){
+    taskUnder = $(this);
+    event.preventDefault();
+}
+function drop (){
+    var index1 = taskOnDrag.attr('data-index');
+    var index2 = taskUnder.attr('data-index');
+    var cloneTaskOnDrag = taskOnDrag.clone();
+    var cloneTaskUnder = taskUnder.clone();
+    taskUnder.replaceWith(cloneTaskOnDrag);
+    taskOnDrag.replaceWith(cloneTaskUnder);
+    console.log(cloneTaskOnDrag, cloneTaskUnder);
+    // if(index1 < index2){
+    //     $(taskOnDrag).insertAfter(taskUnder);
+    // }else{
+    //     $(taskOnDrag).insertBefore(taskUnder);
+    // }
+    $.ajax({
+        url: 'http://127.0.0.1:8000/dashboard/'+index1+'/'+index2,
+        method: 'GET',
+        datatype: 'json',
+    });
+    taskOnDrag.attr('data-index', index2);
+    taskUnder.attr('data-index', index1);
+    addEvents();
+}
+function addEvents() {
+    $('.projetos div').each(function(){
+        $(this).off('dragstart', dragStart);
+        $(this).off('dragover', dragOver);
+        $(this).off('drop', drop);
+        $(this).on('dragstart', dragStart);
+        $(this).on('dragover', dragOver);
+        $(this).on('drop', drop);
+    });
+}
+addEvents();
