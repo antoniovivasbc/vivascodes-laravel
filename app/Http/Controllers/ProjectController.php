@@ -33,7 +33,7 @@ class ProjectController extends Controller
             $project->image = $imageName;
         }
         $project->save();
-        return redirect('/dashboard')->with('msg', 'Projeto adicionado com sucesso!');
+        return redirect('/dashboard')->with('status', 'Projeto adicionado com sucesso!');
     }
     public function destroy($id){
         $project = Project::findOrFail($id);

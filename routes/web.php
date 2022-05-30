@@ -16,10 +16,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [ProjectController::class, 'index']);
-Route::post('/dashboard', [ProjectController::class, 'store'])->Middleware('auth');
-Route::delete('/dashboard/{id}', [ProjectController::class, 'destroy'])->Middleware('auth');
-Route::put('/dashboard/{id}', [ProjectController::class, 'edit'])->Middleware('auth');
-Route::get('/dashboard/{id1}/{id2}', [ProjectController::class, 'swap'])->Middleware('auth');
+
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->group(function () {
     Route::get('/dashboard', [ProjectController::class, 'dashboard'])->name('dashboard');
+});
+
+Route::middleware(['admin'])->group(function(){
+    Route::post('/dashboard', [ProjectController::class, 'store'])->Middleware('auth');
+    Route::delete('/dashboard/{id}', [ProjectController::class, 'destroy'])->Middleware('auth');
+    Route::put('/dashboard/{id}', [ProjectController::class, 'edit'])->Middleware('auth');
+    Route::get('/dashboard/{id1}/{id2}', [ProjectController::class, 'swap'])->Middleware('auth');
 });

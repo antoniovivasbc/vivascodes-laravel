@@ -57,12 +57,6 @@ function drop (){
     var cloneTaskUnder = taskUnder.clone();
     taskUnder.replaceWith(cloneTaskOnDrag);
     taskOnDrag.replaceWith(cloneTaskUnder);
-    console.log(cloneTaskOnDrag, cloneTaskUnder);
-    // if(index1 < index2){
-    //     $(taskOnDrag).insertAfter(taskUnder);
-    // }else{
-    //     $(taskOnDrag).insertBefore(taskUnder);
-    // }
     $.ajax({
         url: 'http://127.0.0.1:8000/dashboard/'+index1+'/'+index2,
         method: 'GET',
