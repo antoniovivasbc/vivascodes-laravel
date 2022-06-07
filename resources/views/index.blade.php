@@ -59,6 +59,7 @@
                     <img src="img/jqueryimg.png" alt="">
                     <img src="img/phpimg.png" alt="">
                     <img src="img/sqlimg.png" alt="">
+                    <img src="img/laravel.png" alt="">
                 </div>
             </div>
         </div>
