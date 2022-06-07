@@ -8,7 +8,7 @@
     background-color: hsl(0, 0%, 100%, .15);
     display: flex;
 }
-.nav img:hover, .icones2 img:hover, .biblioteca div div:hover, .biblioteca div:hover, #close:hover, .modal-btn:hover{
+.nav img:hover, .icones2 img:hover, .site div:hover, .site:hover, #close:hover, .modal-btn:hover{
     cursor: pointer;
 }
 .nav-item1 a{
@@ -333,7 +333,7 @@
     margin-bottom: 10vh;
     font-family: 'Baloo Tammudu 2', cursive;
 }
-.biblioteca div{
+.site{
     color: white;
     width: 355px;
     height: 200px;
@@ -341,8 +341,12 @@
     background-size: cover;
     background-position: center;
     overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px 20px 20px 20px;
 }
-.biblioteca div div{
+.site div{
     width: 100%;
     height: 0;
     background-color: rgba(0, 0, 0, .9);
@@ -353,12 +357,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.site{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0px 20px 20px 20px;
 }
 /*FIM FOOTER*/
 /*RESPONSIVIDADE*/
@@ -448,14 +446,11 @@
         width: 100%;
         height: 100%;
     }
-    .biblioteca{
-        display: block;
-    }
-    .biblioteca div{
+    .site{
         width: 90vw;
         margin-left: 5vw;
     }
-    .biblioteca div div{
+    .site div{
         margin-left: 0vw;
         font-size: 20px;
     }

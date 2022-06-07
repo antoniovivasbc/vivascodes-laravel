@@ -97,9 +97,9 @@
         </div>
         <h2 class="titulo">> Extra</h2>
         <div class="biblioteca">
-            <a class="site" href="https://cssbattle.dev/player/NFoVck0BCucaADZi9lM08RZYWVP2"target='_blank'><div style="background-image: url(img/cssbattle.png);"></div></a>
-            <a class="site" href="https://www.hackerrank.com/antoniovivascav1" target="_blank"><div style="background-image: url(img/hackerrank.png);"></div></a> 
-            <a class="site" href="CV_Antonio_Vivas.pdf" target="_blank"><div style="background-image: url(img/cv.png);"></div></a> 
+            <a class="site" href="https://cssbattle.dev/player/NFoVck0BCucaADZi9lM08RZYWVP2"target='_blank' style="background-image: url(img/cssbattle.png);"></a>
+            <a class="site" href="https://www.hackerrank.com/antoniovivascav1" target="_blank" style="background-image: url(img/hackerrank.png);"></a> 
+            <a class="site" href="CV_Antonio_Vivas.pdf" target="_blank" style="background-image: url(img/cv.png);"></a> 
         </div>
         <div id="footer">
             <p>© Copyright - <span>Vivas Codes</span></p>
