@@ -9,7 +9,6 @@ function mudarCor(id, bg, letra, botao){
     button[0].style.color = bg;
 }
 $('#image').bind('input', function() {
-    console.log("oi")
     var fileInput = document.getElementById('image');
     var preview = document.getElementById("preview")
     var file = fileInput.files[0];
