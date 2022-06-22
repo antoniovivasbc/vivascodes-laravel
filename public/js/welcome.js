@@ -56,8 +56,9 @@ function drop (){
     var cloneTaskUnder = taskUnder.clone();
     taskUnder.replaceWith(cloneTaskOnDrag);
     taskOnDrag.replaceWith(cloneTaskUnder);
+    var link = window.location.href;
     $.ajax({
-        url: 'http://127.0.0.1:8000/dashboard/'+index1+'/'+index2,
+        url: link+'/'+index1+'/'+index2,
         method: 'GET',
         datatype: 'json',
     });
